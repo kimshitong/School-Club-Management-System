@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  
+ 
+}
+h2{
+  text-align: center;
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.right{
+	float :right;	
+}
+
+.left{
+	float: left;
+}
+body {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Georgia,Helvetica,Arial,sans-serif，SimHei;
+}
+
+.myDiv{
+  width: 100%;
+  background-color: #003580;
+  height: auto;
+  color: white;
+  float: left;
+
+}
+
+body {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Georgia,Helvetica,Arial,sans-serif，SimHei;
+}
+
+/* Style the header */
+header {
+  border: 2px;
+    float: left;
+
+  text-align: center  ;
+  font-size: 30px;
+  font-family: Noto Serif SC;
+	background-image:url('images/123.jpg');
+    border: 0;
+
+	color: black;
+    height: 200px;
+
+    width: 100%;
+}
+
+
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left ;
+  width: 100%;
+  background-color: #003580;
+  border: 1px;
+  
+  color: white;
+}
+/* Style the list inside the menu */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:0;
+  /*control position of nav */
+   padding-left:30%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3366ff;
+  
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: black;
+  border: 2px;
+  border-color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #85C1E9;
+}
+
+nav .active {
+  background-color: #D35400;
+}
+
+.navs {
+	float: left;
+  width: 100%;
+  background-color: red;
+  border: 1px;
+  
+  color: white;
+}
+
+.navs ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:0;
+  /*control position of nav */
+    padding-left: 34%;
+	
+  width: 100%;
+  overflow: hidden;
+  background-color: #3366ff;
+  
+}
+
+.navs li {
+  float: left;
+}
+
+.navs li a {
+  display: inline-block;
+  color: black;
+  border: 2px;
+  border-color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navs li a:hover {
+  background-color: #85C1E9;
+}
+
+.navs .active {
+  background-color: #D35400;
+}
+
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 67%;
+  background-color:  white;
+  color: black;
+  
+  border: 20px;
+  border-style: solid;
+  border-color:  black;
+
+}
+
+aside {
+     float: left;
+	text-align: right;
+
+     margin: auto;
+     width: 33%;
+     height: 100%;
+     min-height: 250px;
+	 color: black;
+	 background:  white;
+  border: 20px;
+  border-style: solid;
+  border-color:  black;
+  
+  
+  
+	 
+}
+
+section {
+  background-color:  black;
+  
+}
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border: 1px;
+	border-style: solid;
+	border-color:  #333333;
+	background-color: black;
+	height:100%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+}
